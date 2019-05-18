@@ -7,60 +7,11 @@ body {
   color: black;
 }
 
-.background_image {
- 
-}
-
 .card {
-  margin-top: 20px;
+  margin: 20px 0 0 10px;
   background: rgba(255, 255, 255, 0.397);
 }
 
-/* .about {
-  background: pink;
-  height: 400px;
-} */
-/* gray card */
-.btn_gray {
-  background-color: rgb(255, 255, 255); 
-  border: solid 2px rgb(73, 73, 73);
-  color: rgb(73, 73, 73);
-  padding: 15px 25px;
-  text-align: center;
-  display: inline-block;
-  font-size: 1em;
-  margin: auto;
-  border-radius: 10px;
-}
-
-.btn_gray:hover {
-  background: rgb(73, 73, 73);
-  color: white;
-  border: solid 2px rgb(173, 169, 170);
-}
-/* pink card */
-.btn_pink {
-  background-color: rgb(255, 255, 255); 
-  border: solid 2px rgb(247, 10, 101);
-  color: rgb(247, 10, 101);
-  padding: 15px 25px;
-  text-align: center;
-  display: inline-block;
-  font-size: 1em;
-  margin: auto;
-  border-radius: 10px;
-}
-
-.btn_pink:hover {
-  background: rgb(247, 10, 101);
-  color: white;
-  border: solid 2px pink;
-}
-/* .about {
-  margin: auto;
-} */
-
-/* Side navigation bar */
 .sidenav {
   background: #111;
   padding-top: 60px;
@@ -70,18 +21,29 @@ body {
   padding:30px;
 }
 
-.pagetab {
+.profileimg {
+  border-radius: 50%;
+  border: solid 3px white;
+  margin: 10px;
+}
+
+.about_background {
+  color: white;
+  font-size: 0.9em;
+  margin-left: 10px;
+}
+/* .pagetab {
   font-size: 1.4em;
   color: #ddd3d3;
   display: block;
   transition: 0.3s;
   padding: 15px;
-}
+} */
 
 /* When you mouse over the navigation links, change their color */
-.pagetab:hover {
+/* .pagetab:hover {
   color: #db2955;
-}
+} */
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
