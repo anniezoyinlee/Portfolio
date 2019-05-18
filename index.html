@@ -3,66 +3,95 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>About | Annie Lee</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Annie Lee</title>
+  <link rel="icon" href="assets/images/tab-AL-icon.png">
+  <!-- reset css -->
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <!-- bootstrap  -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- style css -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <link rel="icon" href="assets/images/tab-icon.png">
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <div class="row">
+    <!-- side nav -->
+    <div class="col-2">
+      <div id="mySidenav" class="sidenav">
+        <div class="logo">
+          <!-- Name Logo-->
+          <img src="assets/images/annie-signature.png" width=200px></a>
+        </div>
+        <!-- Contact icons -->
+        <div class="contact_icons">
+          <!-- github -->
+          <a href="https://github.com/anniezoyinlee/">
+            <span><img src="assets/images/github-icon.png" width=30px height=30px></span></a>
+          <!-- linkedin -->
+          <a href="https://www.linkedin.com/in/annie-lee-54582289/">
+            <span><img src="assets/images/linkedin-icon.png" width=30px height=30px></span></a>
+          <!-- email -->
+          <a href="mailto:annie80113@hotmail.com"><span>
+              <img src="assets/images/outlook-icon.png" width=30px height=30px></span></a>
+          <!-- phone number  -->
+          <a href="tel:857-971-1373"><span>
+              <img src="assets/images/phone-icon.png" width=30px height=30px></span></a>
+        </div>
 
-  <header id="masthead">
-    <div class="container">
+        <div>
+          <!-- page tabs -->
+          <div class="pagetab">
+            <a class=pagetab href="index.html">About</a>
+            <a class=pagetab href="portfolio.html">Portfolio</a>
+            <a class=pagetab href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- main -->
+    <div class="col-10">
       <div class="row">
         <div class="col-12">
-          <a href="index.html" id="logo">Annie Lee</a>
-          <nav class="navbar">
-            <a href="index.html">About</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
-          </nav>
+          <div class="about">
+            
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Psychic Game -->
+        <div class="col-3">
+          <div class="card">
+            <img class="card-img-top" src="assets/images/psychic-game.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Psychic Game</h5>
+              <p class="card-text">In this game computer randomly picks a letter, user's goal is to guess which letter
+                it is by typing alphabet from keyboard.</p>
+              <a href="https://anniezoyinlee.github.io/Psychic-Game/" class="btn_gray">Play</a>
+            </div>
+          </div>
+        </div>
+        <!-- Psychic Game -->
+        <div class="col-3">
+          <div class="card">
+            <img class="card-img-top" src="assets/images/crystals-collector-game.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Crystals Collector</h5>
+              <p class="card-text">In this game computer randomly picks a number, and each of the gems has a random
+                value, your goal is reach to the target number by clicking on different gems.</p>
+              <a href="https://anniezoyinlee.github.io/unit-4-game/" class="btn_pink">Play</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </header>
-
-  <div id="main-container" class="container">
-    <div class="card">
-      <div class="card-body">
-        <div class="row">
-          <div class="col-12">
-            <h1>About Me</h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12 col-md-5 col-lg-3">
-            <img src="assets/images/annie.jpg" class="auth-image" alt="Annie Lee">
-          </div>
-          <div class="col-sm-12 col-md-7 col-lg-9">
-            <h3>Background</h3>
-            <p>Harvard Extention School Coding Bootcamp 2019</p>
-          </div>
-          <p>Donec vehicula lacus at leo feugiat lacinia. In et ex ultrices, ultrices neque non, pretium odio.
-            Nunc
-            id
-            eros iaculis, pulvinar quam eget, egestas mauris.</p>
-
-          <p>Suspendisse dictum, arcu at convallis faucibus, quam sapien tincidunt nunc, sit amet egestas nibh
-            tortor
-            et
-            mi.
-            Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-        </div>
-      </div>
-    </div>
-  </div>
 
   </div>
 
-  <footer>
-    Copyright &copy;
-  </footer>
 </body>
 
 </html>

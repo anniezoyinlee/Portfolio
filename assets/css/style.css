@@ -1,208 +1,107 @@
 body {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 18px;
-  color: #e02846;
-  line-height: 34px;
-  background: url("../images/concrete_seamless.png");
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: 2000px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1em;
+  color: black;
 }
 
-/* general */
-
-.container-fluid {
-  background: white;
-  max-width: 100%;
-  margin: 0 auto;
-  clear: both;
+.background_image {
+ 
 }
 
-p {
-  margin: 20px;
+.card {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.397);
 }
 
-p:last-child {
-  margin-bottom: 0;
-}
-
-h1,
-h2,
-h3 {
-  font-family: Georgia, Times, "Times New Roman", serif;
-  font-weight: 700;
-  color: #e2486e;
-  margin-bottom: 20px;
-}
-
-h1 {
-  font-size: 30px;
-  line-height: 49px;
-  padding-bottom: 20px;
-  border-bottom: 3px solid #dddddd;
-}
-
-h2,
-h3 {
-  font-size: 22px;
-}
-
-/* header */
-
-#masthead {
-  color: #ffffff;
-  background: #ffffff;
-  position: fixed;
-  z-index: 99;
-  width: 100%;
-  margin: auto;
-  border-bottom: 1px solid #cccccc;
-}
-
-#logo {
-  font-family: Georgia, Times, "Times New Roman", serif;
-  font-size: 30px;
-  font-weight: 700;
-  color: #ffffff;
-  background: #e2486e;
-  float: left;
-  width: 250px;
-  height: 90px;
-  line-height: 90px;
+/* .about {
+  background: pink;
+  height: 400px;
+} */
+/* gray card */
+.btn_gray {
+  background-color: rgb(255, 255, 255); 
+  border: solid 2px rgb(73, 73, 73);
+  color: rgb(73, 73, 73);
+  padding: 15px 25px;
   text-align: center;
-}
-
-nav {
-  float: right;
-  margin-top: 25px;
-}
-
-nav a {
-  color: #999;
-  line-height: 18px;
   display: inline-block;
-  padding-left: 15px; 
-  border-left: 1px solid #efefef;
-  margin-left: 15px;
+  font-size: 1em;
+  margin: auto;
+  border-radius: 10px;
 }
 
-nav a:first-child {
-  border-left: 0 none;
+.btn_gray:hover {
+  background: rgb(73, 73, 73);
+  color: white;
+  border: solid 2px rgb(173, 169, 170);
 }
-
-/* footer */
-
-footer {
-  color: #cccccc;
-  background: #666666;
-  font-size: 12px;
-  height: 50px;
+/* pink card */
+.btn_pink {
+  background-color: rgb(255, 255, 255); 
+  border: solid 2px rgb(247, 10, 101);
+  color: rgb(247, 10, 101);
+  padding: 15px 25px;
   text-align: center;
-  padding: 30px 0;
-  border-top: 8px solid #e2486e;
-  clear: both;
+  display: inline-block;
+  font-size: 1em;
+  margin: auto;
+  border-radius: 10px;
 }
 
-h2,
-h3 {
-  line-height: 22px;
-  padding-bottom: 20px;
-  border-bottom: 2px solid #eeeeee;
-  margin-bottom: 15px;
+.btn_pink:hover {
+  background: rgb(247, 10, 101);
+  color: white;
+  border: solid 2px pink;
+}
+/* .about {
+  margin: auto;
+} */
+
+/* Side navigation bar */
+.sidenav {
+  background: #111;
+  padding-top: 60px;
 }
 
-/* main */
-
-#main-container {
-  min-height: calc(100vh - 70px);
-  padding-top: 150px;
-  padding-bottom: 40px;
-  margin-bottom: auto;
+.contact_icons {
+  padding:30px;
 }
 
-.main-section {
-  float: left;
-  background: #ffffff;
-  width: 100%;
-  max-width: 960px;
-  padding: 30px;
-  border: 1px solid #dddddd;
-  margin: 0 0 40px;
-}
-
-/* portfolio page */
-
-.work {
-  position: relative;
-  float: left;
-  max-width: 100%;
-  height: auto;
-  margin: 20px 0 25px;
-  overflow: auto;
-}
-
-.work img {
-  width: 100%;
-  border: 0 none;
-  opacity: 0.8;
-}
-
-.work h3 {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  padding: 15px;
-  margin-bottom: 0;
-  font-weight: 300;
-  line-height: 30px;
-  color: #ffffff;
-  text-align: center;
-  background: #e2486e;
-  border-bottom: 0;
-}
-
-.auth-image {
-  position: relative;
-  float: left;
-  max-width: 100%;
-  height: auto;
-  margin-top: 10px;
-  margin-right: 25px;
-}
-
-/* contact page */
-
-#contact-form ul {
-  margin-bottom: 20px;
-}
-
-#contact-form li {
-  margin-bottom: 10px;
-}
-
-label,
-input[type=text],
-input[type=email],
-textarea {
+.pagetab {
+  font-size: 1.4em;
+  color: #ddd3d3;
   display: block;
-  width: 100%;
+  transition: 0.3s;
+  padding: 15px;
 }
 
-input[type=text],
-input[type=email],
-textarea {
-  height: 35px;
-  padding: 0 10px;
-  font-size: 14px;
-  border: 1px solid #dddddd;
+/* When you mouse over the navigation links, change their color */
+.pagetab:hover {
+  color: #db2955;
 }
 
-textarea {
-  height: 200px;
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/* The sidenav */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(173, 33, 92, 0.425);
+  overflow-x: hidden;
+  padding-top: 20px;
 }
 
-input[type=submit] {
-  color: #ffffff;
-  background: #e2486e;
-  padding: 10px 30px;
-  font-size: 18px;
-  cursor: pointer;
-  border: 0 none;
+/* Page content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
 }
