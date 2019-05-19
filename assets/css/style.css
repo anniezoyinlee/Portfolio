@@ -10,10 +10,13 @@ body {
 .card {
   margin: 20px 0 0 10px;
   background: rgba(255, 255, 255, 0.397);
+  border: 2px;
+  border-radius: 40px;
 }
 
 .sidenav {
-  background: #111;
+  height: 100%;
+  background: rgba(173, 33, 92, 0.425);
   padding-top: 60px;
 }
 
@@ -32,6 +35,7 @@ body {
   font-size: 0.9em;
   margin-left: 10px;
 }
+
 /* .pagetab {
   font-size: 1.4em;
   color: #ddd3d3;
@@ -45,25 +49,64 @@ body {
   color: #db2955;
 } */
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+
+/* Max width: 980px */
+@media screen and (max-height: 980px) {
+  .sidenav {
+    height: 90%;
+    width: 90%;
+  }
+
+  body,
+  p,
+  h5 {
+    font-size: 1em;
+  }
+
+  img {
+    width: 80%;
+    height: 80%
+  }
 }
-/* The sidenav */
-.sidenav {
-  height: 100%;
-  width: 200px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgba(173, 33, 92, 0.425);
-  overflow-x: hidden;
-  padding-top: 20px;
+/* Max width: 768px */
+@media screen and (max-height: 768px) {
+  .sidenav {
+    height: 100%;
+    width: 120%;
+    background: rgba(173, 33, 92, 0.425);
+    padding-top: 60px;
+  }
+
+  body,
+  p,
+  h5 {
+    font-size: 0.8em;
+  }
+
+  img {
+    width: 80%;
+    height: 80%
+  }
 }
 
-/* Page content */
-.main {
-  margin-left: 200px; /* Same as the width of the sidenav */
+
+/* Max width: 640px */
+@media screen and (max-height: 640px) {
+  .sidenav {
+    height: 100%;
+    width: 120%;
+    background: rgba(173, 33, 92, 0.425);
+    padding-top: 60px;
+  }
+
+  body,
+  p,
+  h5 {
+    font-size: 0.8em;
+  }
+
+  img {
+    width: 80%;
+    height: 80%
+  }
 }
