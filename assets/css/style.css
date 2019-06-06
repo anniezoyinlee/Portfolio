@@ -7,6 +7,10 @@ body {
   color: black;
 }
 
+.container {
+  max-width: 100%;
+  margin: auto;
+}
 .card {
   margin: 20px 0 0 10px;
   background: rgba(255, 255, 255, 0.397);
@@ -15,13 +19,19 @@ body {
 }
 
 .sidenav {
+  float: left;
   height: 100%;
   background: rgba(173, 33, 92, 0.425);
   padding-top: 60px;
 }
 
+div.col-2 {
+  padding: 0;
+}
+
 .contact_icons {
   padding:30px;
+  width: 200px;
 }
 
 .profileimg {
@@ -36,6 +46,10 @@ body {
   margin-left: 10px;
 }
 
+.profolio {
+  float: left;
+  margin: auto;
+}
 /* .pagetab {
   font-size: 1.4em;
   color: #ddd3d3;
@@ -51,7 +65,7 @@ body {
 
 
 /* Max width: 980px */
-@media screen and (max-height: 980px) {
+/* @media screen and (max-height: 980px) {
   .sidenav {
     height: 90%;
     width: 90%;
@@ -63,13 +77,9 @@ body {
     font-size: 1em;
   }
 
-  img {
-    width: 80%;
-    height: 80%
-  }
-}
+} */
 /* Max width: 768px */
-@media screen and (max-height: 768px) {
+/* @media screen and (max-height: 768px) {
   .sidenav {
     height: 100%;
     width: 120%;
@@ -87,11 +97,9 @@ body {
     width: 80%;
     height: 80%
   }
-}
-
-
+} */
 /* Max width: 640px */
-@media screen and (max-height: 640px) {
+/* @media screen and (max-height: 640px) {
   .sidenav {
     height: 100%;
     width: 120%;
@@ -109,4 +117,4 @@ body {
     width: 80%;
     height: 80%
   }
-}
+} */
